@@ -1,0 +1,28 @@
+$purple: #7a04f0;
+
+.btn-primary {
+  background-color: $purple;
+  &:not(.btn-check) + .btn:active {
+    background-color: $purple;
+  }
+}
+
+$pink-200: #9d9ce38a;
+
+.secondary {
+  background-color: $pink-200;
+}
+
+$pink-400: rgb(157 156 227);
+
+.btn-outline-secondary {
+  background-color: $pink-200;
+  &.btn:hover {
+    background-color: $pink-400;
+  }
+}
+
+$gray: #808080;
+.btn-secondary {
+  background-color: $gray;
+}
