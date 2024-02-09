@@ -1,0 +1,23 @@
+.btn-primary {
+  background-color: #7a04f0;
+}
+.btn-primary:not(.btn-check) + .btn:active {
+  background-color: #7a04f0;
+}
+
+.secondary {
+  background-color: rgba(157, 156, 227, 0.5411764706);
+}
+
+.btn-outline-secondary {
+  background-color: rgba(157, 156, 227, 0.5411764706);
+}
+.btn-outline-secondary.btn:hover {
+  background-color: rgb(157, 156, 227);
+}
+
+.btn-secondary {
+  background-color: #808080;
+}
+
+/*# sourceMappingURL=buttons.css.map */
