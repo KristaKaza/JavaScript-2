@@ -27,7 +27,8 @@
   },
   "homepage": "https://github.com/NoroffFEU/css-frameworks-ca#readme",
   "dependencies": {
-    "bootstrap": "^5.2.0"
+    "bootstrap": "^5.2.0",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
     "live-server": "^1.2.2",
