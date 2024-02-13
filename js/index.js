@@ -1,5 +1,6 @@
 const NOROFF_API_URL = "https://v2.api.noroff.dev";
 
+//function to creat a post -- creat a new file post.js and exclude it from this js file
 async function createPost(title, body, apiKey, accessToken) {
   const options = {
     method: "POST",
@@ -75,6 +76,7 @@ async function register(email, password) {
   return true;
 }
 
+// LOGIN FUNCTION
 async function login(email, password) {
   if (!email.endsWith("@noroff.no") && !email.endsWith("@stud.noroff.no")) {
     return false;
@@ -119,6 +121,7 @@ async function login(email, password) {
   return true;
 }
 
+//SIGN IN BUTTON
 document.getElementById("signIn").addEventListener("submit", function (event) {
   event.preventDefault();
   const email = event.target[0].value;
@@ -132,6 +135,7 @@ document.getElementById("signIn").addEventListener("submit", function (event) {
   });
 });
 
+//REGISTER BUTTON
 document.getElementById("register").addEventListener("click", function (event) {
   event.preventDefault();
   console.log(event);
@@ -146,6 +150,7 @@ document.getElementById("register").addEventListener("click", function (event) {
   });
 });
 
+//IF USER IS ALREADY LOGGED IN, CAN GET RIGHT AWAY IN THE PROFILE.HTML WITHOUT LOGING IN AGAIN
 window.addEventListener("load", () => {
   if (localStorage.getItem("logged-in-email")) {
     window.location.href = "/html/profile/index.html";
